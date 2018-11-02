@@ -34,18 +34,6 @@ const config = {
                 use: [
                     'file-loader?name=src/assets/icons/[name].[ext]'
                 ]
-            },
-            {
-                test: /\.(png)$/,
-                exclude: /node_modules/,
-                use: [
-                    'file-loader?name=src/assets/pictures/[name].[ext]'
-                ]
-            },
-            {
-                test: /\.(ttf|woff)$/,
-                exclude: /node_modules/,
-                loader: 'file-loader?name=src/assets/fonts/[name].[ext]'
             }
         ]
     },

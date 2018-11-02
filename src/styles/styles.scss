@@ -1,7 +1,4 @@
-@font-face { 
-    font-family: 'ArialMT'; 
-    src: local('ArialMT'), url('../assets/fonts/ArialMT-Bold.woff') format('woff'); 
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html, body {
     height: 100%;
@@ -12,6 +9,5 @@ body {
     padding: 0;
     color: #333;
     background-color: #fff;
-    font-family: 'ArialMT', Arial, Helvetica, sans-serif;
-    
+    font-family: 'Roboto', Helvetica, sans-serif;
 }

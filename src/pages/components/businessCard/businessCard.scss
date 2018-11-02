@@ -2,13 +2,13 @@
 
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    max-height: 250px;
+    min-width: 335px;
     border: 1px solid #333;
-    padding: 30px;
+    padding: 25px;
 
     &__logo {
         margin-bottom: 15px;
+        font-weight: bold;
         color: #013D32;
     }
 
@@ -23,12 +23,16 @@
             margin-bottom: 5px;
         }
 
+        &__fullname {
+            font-weight: bold;
+        }
+
         &__primary-info {
             margin-right: 30px;
         }
 
         &__current-position {
-            color: #ccc;
+            color: #707070;
             font-size: 14px;
         }
     }
@@ -37,6 +41,10 @@
 
         &__personal {
             margin-bottom: 20px;
+        }
+
+        &__cell {
+            font-weight: bold;
         }
 
         &__email {
