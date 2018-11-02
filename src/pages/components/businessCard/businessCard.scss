@@ -1,0 +1,46 @@
+.business-card {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height: 250px;
+    background-color: #fff;
+    padding: 30px;
+
+    &__logo {
+        margin-bottom: 15px;
+        color: #013D32;
+    }
+
+    &__person {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .person {
+        p {
+            margin-bottom: 5px;
+        }
+
+        &__primary-info {
+            margin-right: 30px;
+        }
+
+        &__current-position {
+            color: #ccc;
+            font-size: 14px;
+        }
+    }
+
+    .contacts {
+
+        &__personal {
+            margin-bottom: 10px;
+        }
+
+        &__email {
+            font-size: 14px;
+        }
+    }
+
+}
