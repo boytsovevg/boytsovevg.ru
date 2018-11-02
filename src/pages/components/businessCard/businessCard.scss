@@ -1,15 +1,28 @@
+@keyframes blane {
+
+    0% {
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.4);
+    }
+    50% {
+        box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.8);
+    }
+    100% {
+        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.4);
+    }
+}
+
 .business-card {
 
     display: flex;
     flex-direction: column;
     min-width: 335px;
-    border: 1px solid #333;
     padding: 25px;
-
+    animation: blane 3.5s ease-in-out infinite;
+    
     &__logo {
         margin-bottom: 15px;
         font-weight: bold;
-        color: #013D32;
+        color: #005073;
     }
 
     &__person {
@@ -49,8 +62,8 @@
 
         &__email {
             font-size: 14px;
-            color: #013D32;
+            color: #005073;
+            letter-spacing: .1ch;
         }
     }
-
 }
