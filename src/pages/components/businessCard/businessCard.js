@@ -1,36 +1,8 @@
 import './businessCard.scss';
 
-import { socialsList } from '..';
+import { socialsList } from '../socialsList/socialsList';
 
-export function businessCard() {
-
-    const person = {
-        fullName: 'Evgeniy Boytsov',
-        currentPosition: 'Front-end developer',
-        cell: '+79535371277',
-        email: 'evgeniy.boytsov@gmail.com'
-    }
-
-    const socials = [
-        {
-            name: 'github',
-            link: 'https://github.com/boytsovevg',
-            nickName: 'boytsovevg',
-            icon: ''
-        },
-        {
-            name: 'stackoverflow',
-            link: 'https://stackoverflow.com/users/6131743/evgeniy-boytsov?tab=profile',
-            nickName: 'boytsovevg',
-            icon: ''
-        },
-        {
-            name: 'linkedIn',
-            link: 'https://www.linkedin.com/in/boytsovevg/',
-            nickName: 'boytsovevg',
-            icon: ''
-        },
-    ];
+export function businessCard(person) {
 
     return `
         <div class="business-card">
@@ -46,11 +18,11 @@ export function businessCard() {
                 <div class="person__contacts contacts">
                     <div class="contacts__personal">
                         <p class="contacts__cell">${person.cell}</p>
-                        <p class="contacts__email">${person.email}</p>
+                        <span class="contacts__email">${person.email}</span>
                     </div>
 
                     <div class="contacts__socials">
-                        ${socialsList(socials)}
+                        ${socialsList(person.socials)}
                     </div>
                 </div>
             </div>

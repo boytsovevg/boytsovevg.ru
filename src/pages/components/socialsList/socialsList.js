@@ -1,9 +1,11 @@
 import './socialsList.scss';
 
 export function socialsList(socials) {
-    const socialListItem = social => `
+    const socialListItem = ({name, link, icon}) => `
         <li>
-            <a title="${social.name}" target="blank" href="${social.link}">${social.name}</a>
+            <a title="${name}" target="blank" href="${link}">
+                <img width="${icon.size.width}" height="${icon.size.height}" src="${icon.logo}" alt="${name}">
+            </a>
         </li>
     `;
 
