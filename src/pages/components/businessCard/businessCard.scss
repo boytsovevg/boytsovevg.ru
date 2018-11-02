@@ -58,12 +58,26 @@
 
         &__cell {
             font-weight: bold;
+            letter-spacing: .1ch;
         }
 
         &__email {
             font-size: 14px;
             color: #005073;
             letter-spacing: .1ch;
+        }
+    }
+
+    .socials {
+
+        display: flex;
+        align-items: center;
+
+        &__nickname {
+
+            margin-left: 10px;
+            font-weight: bold;
+            letter-spacing: .05ch;
         }
     }
 }

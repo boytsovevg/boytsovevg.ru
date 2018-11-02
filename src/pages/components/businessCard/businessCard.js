@@ -21,8 +21,11 @@ export function businessCard(person) {
                         <span class="contacts__email">${person.email}</span>
                     </div>
 
-                    <div class="contacts__socials">
+                    <div class="contacts__socials socials">
                         ${socialsList(person.socials)}
+                        <span class="socials__nickname">
+                            ${person.nickname}
+                        </span>
                     </div>
                 </div>
             </div>

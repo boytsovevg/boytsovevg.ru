@@ -33,25 +33,23 @@ export function main() {
     const person = {
         fullName: 'Evgeniy Boytsov',
         currentPosition: 'Front-end developer',
+        nickname: 'boytsovevg',
         cell: '+79535371277',
         email: 'evgeniy.boytsov@gmail.com',
         socials: [
             {
                 name: 'github',
                 link: 'https://github.com/boytsovevg',
-                nickName: 'boytsovevg',
                 icon: logos['github']
             },
             {
                 name: 'stackoverflow',
                 link: 'https://stackoverflow.com/users/6131743/evgeniy-boytsov?tab=profile',
-                nickName: 'boytsovevg',
                 icon: logos['stackoverflow']
             },
             {
                 name: 'linkedin',
                 link: 'https://www.linkedin.com/in/boytsovevg/',
-                nickName: 'boytsovevg',
                 icon: logos['linkedin']
             },
         ]
