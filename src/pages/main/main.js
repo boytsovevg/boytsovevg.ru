@@ -14,7 +14,7 @@ export function main() {
                 height: 25
             }
         },
-        stackoverflow: {
+        stackOverflow: {
             logo: soLogo,
             size: {
                 width: 30,
@@ -28,11 +28,11 @@ export function main() {
                 height: 25
             }
         }
-    }
+    };
 
     const person = {
         fullName: 'Evgeniy Boytsov',
-        currentPosition: 'Front-end developer',
+        currentPosition: 'Senior Front-end Engineer',
         nickname: 'boytsovevg',
         cell: '+79535371277',
         email: 'evgeniy.boytsov@gmail.com',
@@ -40,20 +40,20 @@ export function main() {
             {
                 name: 'github',
                 link: 'https://github.com/boytsovevg',
-                icon: logos['github']
+                icon: logos.github
             },
             {
                 name: 'stackoverflow',
                 link: 'https://stackoverflow.com/users/6131743/evgeniy-boytsov?tab=profile',
-                icon: logos['stackoverflow']
+                icon: logos.stackOverflow
             },
             {
                 name: 'linkedin',
                 link: 'https://www.linkedin.com/in/boytsovevg/',
-                icon: logos['linkedin']
+                icon: logos.linkedin
             },
         ]
-    }
+    };
 
     return `
         ${businessCard(person)}

@@ -1,13 +1,18 @@
-@keyframes blane {
-
+@keyframes levitate {
     0% {
-        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.4);
+        -webkit-box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
+        -moz-box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
+        box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
     }
     50% {
-        box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.8);
+        -webkit-box-shadow: 0 3px 15px 2px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0 3px 15px 2px rgba(0,0,0,0.25);
+        box-shadow: 0 3px 15px 2px rgba(0,0,0,0.25);
     }
     100% {
-        box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.4);
+        -webkit-box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
+        -moz-box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
+        box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
     }
 }
 
@@ -15,10 +20,16 @@
 
     display: flex;
     flex-direction: column;
-    min-width: 335px;
+    max-width: 400px;
+    max-height: 150px;
     padding: 25px;
-    animation: blane 3.5s ease-in-out infinite;
-    
+    animation: levitate 3.5s ease-in-out infinite;
+
+    &:hover {
+        box-shadow: 0 0 7px 1px rgba(0,0,0,0.45);
+        animation: none;
+    }
+
     &__logo {
         margin-bottom: 15px;
         font-weight: bold;
@@ -32,8 +43,7 @@
 
     .person {
         p {
-            margin: 0;
-            margin-bottom: 5px;
+            margin: 0 0 5px;
         }
 
         &__fullname {
