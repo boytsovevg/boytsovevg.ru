@@ -24,13 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boytsovevg/business-card.git"
+    "url": "git+https://github.com/boytsovevg/boytsovevg.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/boytsovevg/business-card/issues"
+    "url": "https://github.com/boytsovevg/boytsovevg/issues"
   },
-  "homepage": "https://github.com/boytsovevg/business-card#readme"
+  "homepage": "https://github.com/boytsovevg/boytsovevg#readme"
 }
