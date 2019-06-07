@@ -5,12 +5,14 @@
   "main": "webpack.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "publish": "ghpages -p dist"
   },
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
+    "ghpages": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.2",
     "sass-loader": "^7.0.3",
